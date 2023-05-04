@@ -1,0 +1,4 @@
+Requisitos:
+    Node, Nodemon, Typescript, ts-node
+
+    npm install -g nodemon typescript ts-node
