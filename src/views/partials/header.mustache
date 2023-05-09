@@ -11,8 +11,8 @@
         <header>
             <div class="container">
                 <a href="/">PetDevShop</a>
-                <form method="GET" action="/search">
-                    <input type="search" name="q" placeholder="Pesquise por raça" />
+                <form method="GET" action="/search"> <!-- Preenche o valor do input caso seja enviado a var "searchTerm" -->
+                    <input type="search" name="searchTerm" placeholder="Pesquise por raça" value="{{ searchTerm }}" />
                 </form>
             </div>
         </header>

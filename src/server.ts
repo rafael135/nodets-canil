@@ -18,8 +18,9 @@ server.use(express.static(path.join(__dirname, "../public"))); // Seto a pasta e
 // Rotas
 server.use(mainRoutes);
 
+// Caso o usuario tente acessar uma rota que nao existe, vai carregar a view "404"
 server.use((req: Request, res: Response) => {
-    res.send("Pagina nao encontrada");
+    res.render("pages/404");
 });
 
 server.listen(process.env.PORT);
